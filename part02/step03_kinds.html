@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step03_kinds</title>
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+        // 즉시실행
+        // (function(str){
+        //     console.log(str);
+        // })
+
+        // 화살표 함수 =>
+        // let arrow=function(){
+        //     console.log('arrow');
+        // }
+
+        let arrow=() => {
+            console.log('arrow');
+        }
+        arrow();
+
+        // 화살표 함수로 변경
+        // let sum=function(x,y){
+        //     return x+y;
+        // }
+
+        // let sum=(x,y) => {
+        //     return x+y;
+        // }
+        let sum=(x,y)=>x+y;
+        console.log(sum(1,2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step03_array</title>
+</head>
+<body>
+    <h1>Array</h1>
+
+    <script>
+        // array
+
+        // 생성
+        let scores =[100,75,28,82];
+
+        // 조회 : 배열변수명[인덱스번호]
+        // console.log(scores[0]);
+        // console.log(scores[1]);
+        // console.log(scores[2]);
+        // console.log(scores[3]);
+
+        for(let i=0;i<scores.length;i++){
+            console.log(scores[i]);
+        }
+
+        // 배열 길이 : 배열변수명.length
+        // console.log(scores.length);
+
+        // 변경
+        // push : 추가
+        scores.push(20);
+        // console.log(scores);
+
+        // unshilft : 맨앞에 요소 추가
+        scores.unshift(50);
+        // console.log(scores);
+
+        // pop : 
+        scores.pop();
+        // console.log(scores);
+
+        console.log(scores);
+        // splice : 지정 인덱스 포함 이후 모든 요소 삭제
+        // scores.splice(2);
+        // console.log(scores);
+
+        // splice(idx,no) : 지정 인덱스 포함 이후 no개 요소 삭제
+        // scores.splice(1,2);
+        // console.log(scores);
+
+        // splice(idx,no,el) : 지정 인덱스 포함 이후 no개 요소 삭제 후 해당 idx요소 추가
+        // scores.splice(2,0,60);
+        // console.log(scores);
+
+        // slice(idx) : 지정 인덱스 포함 이후 요소 출력 (단, 원래)
+        // console.log(scores.slice(1));
+        // console.log(scores);
+
+        // indexOf
+        // console.log(scores.indexOf(75));
+        // console.log(scores);
+
+        // join()
+        // console.log(scores.join(''));
+        // console.log(scores);
+
+        // concat() : 배열 + 배열 -> 새로운 배열
+        let scores2 = [10,45];
+        // console.log(scores.concat(scores2));
+        // console.log(scores2);
+
+        // sort() : 
+        // scores.sort();
+        // console.log(scores);
+
+        let group = ['뉴진스','엑소','블랙핑크']
+        // group.sort();
+        // console.log(group);
+
+        // for(let i=0; i<group.length;i++){
+        //     console.log(group[i]);
+        // }
+
+        // for ~ of
+        /*
+            for(변수 of 배열변수명){
+                수행코드;
+            }
+
+        */
+
+        for(v of group){
+            console.log(v);
+        }
+
+        let test = [1,2,3];
+        // map : 반복문을 통해 배열 요소를 1:1 매핑
+        test.map(v => {
+            console.log(v);
+        })
+
+    </script>
+</body>
+</html>
